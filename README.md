@@ -26,9 +26,16 @@
 
 
 ## Location of intersection between ChIP-seq peaks and DNA secondary structures
-![alt text](https://github.com/HSESofya/hse21_H3K4me3_ZDNA_human/blob/main/images/chip_seeker.H3K4me3_K562.intersect_with_DeepZ.plotAnnoPie.pngg)
+![alt text](https://github.com/HSESofya/hse21_H3K4me3_ZDNA_human/blob/main/images/chip_seeker.H3K4me3_K562.intersect_with_DeepZ.plotAnnoPie.png)
 
 ## UCSC GenomeBrowser
 ### UCSC GenomeBrowser session:  
 http://genome.ucsc.edu/s/SofyaLopatina/LopatinaS
-![alt text](http://genome.ucsc.edu/s/SofyaLopatina/LopatinaS)
+![alt text](https://github.com/HSESofya/hse21_H3K4me3_ZDNA_human/blob/main/images/genome_browser.png)
+
+## Association of peaks with genes
+### The number of peaks that could be associated with genes: 10038
+### The total number of unique genes: 6308
+
+## GO-analysis
+![alt text](https://github.com/HSESofya/hse21_H3K4me3_ZDNA_human/blob/main/images/go.png)
