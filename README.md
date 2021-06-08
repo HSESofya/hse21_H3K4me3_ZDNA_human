@@ -26,7 +26,9 @@
 
 
 ## Location of intersection between ChIP-seq peaks and DNA secondary structures
-![alt text](https://github.com/Sikamov/hse21_H3K4me3_ZDNA_human/blob/main/images/chip_seeker.H3K4me3_H1.intersect_with_ZHunt.plotAnnoPie.png)
+![alt text](https://github.com/HSESofya/hse21_H3K4me3_ZDNA_human/blob/main/images/chip_seeker.H3K4me3_K562.intersect_with_DeepZ.plotAnnoPie.pngg)
 
 ## UCSC GenomeBrowser
 ### UCSC GenomeBrowser session:  
+http://genome.ucsc.edu/s/SofyaLopatina/LopatinaS
+![alt text](http://genome.ucsc.edu/s/SofyaLopatina/LopatinaS)
