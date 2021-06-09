@@ -4,8 +4,8 @@ source('lib.R')
 
 
 #NAME <- 'H3K4me3_K562.ENCFF284TAL.hg19'
-NAME <- 'H3K4me3_K562.ENCFF934IIU.hg19'
-
+#NAME <- 'H3K4me3_K562.ENCFF934IIU.hg19'
+NAME <- 'H3K4me3_K562.intersect_with_DeepZ'
 
 ###
 

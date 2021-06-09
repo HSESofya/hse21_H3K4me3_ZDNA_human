@@ -15,21 +15,28 @@ library(clusterProfiler)
 ###
 
 
-NAME <- 'H3K4me3_K562.ENCFF284TAL.hg19.filtered'
+#NAME <- 'H3K4me3_K562.ENCFF284TAL.hg19.filtered'
 #NAME <- 'H3K4me3_K562.ENCFF934IIU.hg19.filtered'
-BED_FN <- paste0(DATA_DIR, NAME, '.bed')
-
+#NAME <- 'H3K4me3_K562.intersect_with_DeepZ'
+#BED_FN <- paste0(DATA_DIR, NAME, '.bed')
+NAME <- 'DeepZ'
+BED_FN <- paste0(NAME, '.bed')
 ###
 
 txdb <- TxDb.Hsapiens.UCSC.hg19.knownGene
 
 peakAnno <- annotatePeak(BED_FN, tssRegion=c(-3000, 3000), TxDb=txdb, annoDb="org.Hs.eg.db")
 
-pdf(paste0(OUT_DIR, 'chip_seeker.', NAME, '.plotAnnoPie.pdf'))
+pdf(paste0('chip_seeker.', NAME, '.plotAnnoPie.pdf'))
+#pdf(paste0(OUT_DIR, 'chip_seeker.', NAME, '.plotAnnoPie.pdf'))
 plotAnnoPie(peakAnno)
 dev.off()
 
 peak <- readPeakFile(BED_FN)
-pdf(paste0(OUT_DIR, 'chip_seeker.', NAME, '.covplot.pdf'))
+pdf(paste0('chip_seeker.', NAME, '.covplot.pdf'))
 covplot(peak, weightCol="V5")
+dev.off()
+
+png(paste0('chip_seeker.', NAME, '.plotAnnoPie.png'))
+plotAnnoPie(peakAnno)
 dev.off()
